@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
+import { AddTaskComponent } from './add-task/add-task.component';
 const myRouter:Routes=[
   {
     path:'',
@@ -16,6 +17,10 @@ const myRouter:Routes=[
   {
     path:'addEmployee',
     component:AddEmployeeComponent
+  },
+  {
+    path:'addTask',
+    component:AddTaskComponent
   }
 ]
 @NgModule({
@@ -23,7 +28,8 @@ const myRouter:Routes=[
     AppComponent,
     AdminLoginComponent,
     AddEmployeeComponent,
-    AdminNavbarComponent
+    AdminNavbarComponent,
+    AddTaskComponent
   ],
   imports: [
     BrowserModule,
