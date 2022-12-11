@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    color: aliceblue;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: rgb(208,34,39)  ;
+    background: linear-gradient(22deg, rgba(208,34,39,1) 0%, rgba(35,61,124,1) 100%) !important;    
+}html {
+    min-height: 100%;
+}
