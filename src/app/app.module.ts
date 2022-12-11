@@ -11,6 +11,10 @@ const myRouter:Routes=[
   {
     path:'',
     component:AdminLoginComponent
+  },
+  {
+    path:'addEmployee',
+    component:AddEmployeeComponent
   }
 ]
 @NgModule({
