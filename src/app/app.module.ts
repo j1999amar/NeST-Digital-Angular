@@ -9,19 +9,26 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { AddTaskComponent } from './add-task/add-task.component';
+import { ViewTaskStatusComponent } from './view-task-status/view-task-status.component';
 const myRouter:Routes=[
   {
-    path:'',
+    path:"",
     component:AdminLoginComponent
   },
   {
-    path:'addEmployee',
+    path:"addEmployee",
     component:AddEmployeeComponent
   },
   {
-    path:'addTask',
+    path:"addTask",
     component:AddTaskComponent
+  },
+  {
+    path:"viewTaskStatus",
+    component:ViewTaskStatusComponent
   }
+  
+  
 ]
 @NgModule({
   declarations: [
@@ -29,7 +36,8 @@ const myRouter:Routes=[
     AdminLoginComponent,
     AddEmployeeComponent,
     AdminNavbarComponent,
-    AddTaskComponent
+    AddTaskComponent,
+    ViewTaskStatusComponent
   ],
   imports: [
     BrowserModule,
