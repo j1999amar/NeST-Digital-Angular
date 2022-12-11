@@ -19,7 +19,6 @@ export class AdminLoginComponent {
     if(this.adminUserLogin=="admin"&&this.adminPassword=="12345") 
     {
       this.route.navigate(['/addEmployee'])
-      alert()
     }else{
       alert("Login Failed!!!")
     }
